@@ -387,8 +387,9 @@ app.post("/email/send", async (req, res)=>{
 
     return res.status(200).json({ status: "allowed" });
   }
-  catch{
+  catch(e){
     console.log(`[EMAIL - ${customerEmail}] Falha no envio`)
+    console.log(`[EMAIL - ERROR] ${e}`)
     return res.status(400).json({ status: "disallowed" });
   }
 })
