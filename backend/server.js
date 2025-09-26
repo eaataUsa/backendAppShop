@@ -384,7 +384,7 @@ app.post("/email/send", async (req, res)=>{
       text: `Seu código é: ${code}`,
       html: htmlContent
     });
-
+    console.log(`[EMAIL - ${customerEmail}] Código enviado com sucesso`)
     return res.status(200).json({ status: "allowed" });
   }
   catch(e){
