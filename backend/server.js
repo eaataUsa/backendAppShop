@@ -24,8 +24,8 @@ const pool = new Pool({
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",  // 🔹 aqui estava errado
-  port: 465,               // SSL
-  secure: true, 
+  port: 587,               // SSL
+  secure: false, 
   auth: {
     user: process.env.GMAIL_USER,   // seu usuário SMTP
     pass: process.env.GMAIL_KEY,   // sua senha SMTP ou token
