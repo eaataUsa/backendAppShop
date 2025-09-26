@@ -1,0 +1,2 @@
+"# appSimuladorJurosVendas" 
+"# backendAppShop" 

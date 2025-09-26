@@ -1,0 +1,18 @@
+{
+  "name": "shopify-device-limit",
+  "version": "1.0.0",
+  "description": "App para limitar login de cliente Shopify a 2 dispositivos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "googleapis": "^159.0.0",
+    "nodemailer": "^7.0.5",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7"
+  }
+}
